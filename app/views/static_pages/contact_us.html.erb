@@ -1,0 +1,35 @@
+<center>
+  <h1 class='white-text'> Contact Us </h1>
+  <br><br>
+
+<div class='u-form-width'>
+  <%= bootstrap_form_tag url: '' do |f| %>
+    <%= f.text_field  :first_name, placeholder: 'First Name', hide_label: true %>
+    <%= f.text_field  :last_name, placeholder: 'Last Name', hide_label: true %>
+    <%= f.text_field  :subject, placeholder: 'Subject', hide_label: true %>
+    <%= f.email_field :email, placeholder: 'Email', hide_label: true %>
+    <%= f.text_area :message, size: '4x', placeholder: 'I would like to know more about...', hide_label: true %>
+    <%= f.submit 'Send', class: "btn btn-block btn-default" %>
+  <% end %>
+</div>
+</center>
+
+<style>
+body {
+    background-image: url(".png");
+    background: url(contact.png) fixed 50% / cover;
+
+
+}
+.white-text {
+  color:white;
+}
+
+.u-form-width{
+  width: 350px;
+  color:white;
+}
+
+
+
+</style>

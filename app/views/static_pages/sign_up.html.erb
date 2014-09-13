@@ -1,0 +1,90 @@
+<div class='white-text'>
+  <center>
+    <h3>Register now and you’ll receive an email when we’re open for business.</h3>
+    <br><br>
+  <div class='row'>
+    <div class='col-md-6'>
+      <div id='u-pricing-box'>
+        <div>
+          <center>
+            <h1 id='u-membership-title'>Studio</h1>
+          </center>
+        </div>
+      </div>
+      <br><br>
+      <div class='u-form-width'>
+        <%= bootstrap_form_tag url: '' do |f| %>
+          <%= f.text_field  :first_name, placeholder: 'First Name', hide_label: true %>
+          <%= f.text_field  :last_name, placeholder: 'Last Name', hide_label: true %>
+          <%= f.text_field  :website, placeholder: 'Studio Website', hide_label: true %>
+          <%= f.text_field :phone, placeholder: 'Phone Number', hide_label: true %>
+          <%= f.text_field  :zipcode, placeholder: 'Zip Code', hide_label: true %>
+          <%= f.submit 'Send', class: "btn btn-block btn-custom" %>
+        <% end %>
+      </div>
+      <br><br>
+    </div>
+    <div class='col-md-6'>
+      <div id='u-pricing-box'>
+        <div>
+          <center>
+            <h1 id='u-membership-title'>Member</h1>
+          </center>
+        </div>
+      </div>
+      <br><br>
+      <div class='u-form-width'>
+        <%= bootstrap_form_tag url: '' do |f| %>
+          <%= f.text_field  :first_name, placeholder: 'First Name', hide_label: true %>
+          <%= f.text_field  :last_name, placeholder: 'Last Name', hide_label: true %>
+          <%= f.email_field :email, placeholder: 'Email', hide_label: true %>
+          <%= f.text_field :phone, placeholder: 'Phone Number', hide_label: true %>
+          <%= f.text_field  :zipcode, placeholder: 'Zip Code', hide_label: true %>
+          <%= f.submit 'Send', class: "btn btn-block btn-custom" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+  </center>
+  <br><br>
+</div>
+
+
+<style>
+body {
+    background: url(sign_up.png) fixed 50% / cover;
+
+
+}
+.white-text h1,h2,h3,h4,p,ul>li {
+  color:white;
+}
+.u-form-width{
+  width: 350px;
+  color:white;
+}
+
+input[type="text"], input[type="email"]
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+}
+
+.btn-custom {
+  background-color: hsl(26, 100%, 39%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe8223", endColorstr="#c65600");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fe8223), to(#c65600));
+  background-image: -moz-linear-gradient(top, #fe8223, #c65600);
+  background-image: -ms-linear-gradient(top, #fe8223, #c65600);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe8223), color-stop(100%, #c65600));
+  background-image: -webkit-linear-gradient(top, #fe8223, #c65600);
+  background-image: -o-linear-gradient(top, #fe8223, #c65600);
+  background-image: linear-gradient(#fe8223, #c65600);
+  border-color: #c65600 #c65600 hsl(26, 100%, 34.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
+}
+
+</style>

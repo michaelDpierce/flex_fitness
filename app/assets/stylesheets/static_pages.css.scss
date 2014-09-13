@@ -1,0 +1,53 @@
+body { padding-bottom: 100px; }
+
+ul {
+    list-style-type: circle;
+}
+ul > li {
+    color: black;
+}
+ul > li > span {
+    color: black;
+}
+#u-pricing-box{
+  width:225px;
+  height:150px;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;border:5px solid #999999;
+  background:rgba(59,55,55,0.9);
+}
+#u-membership-title{
+  color: white;
+  position: relative;
+  top: 25px;
+}
+.pricing-text{
+  width: 225px;
+}
+@media (min-width: 500px) {
+  #u-navbar-height{
+    height: 100px;
+  }
+}
+
+#u-navbar-button-offset{
+  position: relative;
+  top: 20px;
+}
+
+#u-navbar-social-networking-offset{
+  position: relative;
+  bottom: 20px;
+}
+
+#copyright{
+  color: #e65100;
+}
+
+#michael{
+  color: grey;
+}
+.transbox{
+    background-color: #ffffff;
+    border: 1px solid black;
+    opacity: 0.6;
+    filter: alpha(opacity=60); /* For IE8 and earlier */
+}
