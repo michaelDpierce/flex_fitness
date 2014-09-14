@@ -14,10 +14,20 @@ ul > li > span {
   height:150px;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;border:5px solid #999999;
   background:rgba(59,55,55,0.9);
 }
+#u-pricing-box-mini{
+  width:225px;
+  height:60px;-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;border:5px solid #999999;
+  background:rgba(59,55,55,0.9);
+}
 #u-membership-title{
   color: white;
   position: relative;
   top: 25px;
+}
+#u-membership-title-mini{
+  color: white;
+  position: relative;
+  top: 6px;
 }
 .pricing-text{
   width: 225px;
@@ -50,4 +60,20 @@ ul > li > span {
     border: 1px solid black;
     opacity: 0.6;
     filter: alpha(opacity=60); /* For IE8 and earlier */
+}
+.btn-custom {
+  background-color: hsl(26, 100%, 39%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#fe8223", endColorstr="#c65600");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#fe8223), to(#c65600));
+  background-image: -moz-linear-gradient(top, #fe8223, #c65600);
+  background-image: -ms-linear-gradient(top, #fe8223, #c65600);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fe8223), color-stop(100%, #c65600));
+  background-image: -webkit-linear-gradient(top, #fe8223, #c65600);
+  background-image: -o-linear-gradient(top, #fe8223, #c65600);
+  background-image: linear-gradient(#fe8223, #c65600);
+  border-color: #c65600 #c65600 hsl(26, 100%, 34.5%);
+  color: #fff !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.29);
+  -webkit-font-smoothing: antialiased;
 }
