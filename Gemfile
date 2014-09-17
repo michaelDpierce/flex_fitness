@@ -18,7 +18,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 
-group :production, do
-  gem 'rails_12factor',
-  gem 'pg'
+group :production do
+  gem 'rails_12factor'
+  gem 'pg', '~>0.17.1'
 end
