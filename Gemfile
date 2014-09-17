@@ -17,4 +17,8 @@ gem 'bootstrap_form'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
-gem 'rails_12factor', group: :production
+
+group :production, do
+  gem 'rails_12factor',
+  gem 'pg'
+end
