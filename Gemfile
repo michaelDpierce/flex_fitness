@@ -17,6 +17,7 @@ gem 'bootstrap_form'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
+gem 'font-awesome-less'
 
 group :production do
   gem 'rails_12factor'

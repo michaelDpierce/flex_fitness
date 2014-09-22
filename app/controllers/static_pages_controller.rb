@@ -18,4 +18,8 @@ class StaticPagesController < ApplicationController
   def contact_us
   end
 
+  def landing_page_idea
+    render layout: 'special_layout'
+  end
+
 end

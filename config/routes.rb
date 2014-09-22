@@ -2,6 +2,8 @@ Rails.application.routes.draw do
 
   root 'static_pages#index'
 
+  match '/landing_page_idea', to: 'static_pages#landing_page_idea', via: 'get'
+
   match '/how_it_works', to: 'static_pages#how_it_works', via: 'get'
   match '/pricing_and_membership', to: 'static_pages#pricing_and_membership', via: 'get'
   match '/studio_information', to: 'static_pages#studio_information', via: 'get'
