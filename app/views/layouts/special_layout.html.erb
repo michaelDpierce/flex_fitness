@@ -9,7 +9,14 @@
 
   <div id='nav_header'>
     <div id='u-logo-position'>
-      <%= image_tag '/logo.png'%>
+      <%= image_tag '/logo.png', alt:'Flex Fitness Logo #1'%>
+    </div>
+    <div id='u-logo-2-position'>
+      <%= image_tag '/ff_logo.png', width:'125', height:'125', alt:'Flex Fitness Logo #2'%>
+    </div>
+    <div id='u-social-position'>
+      <%= link_to image_tag('/Facebook.png'), 'https://www.facebook.com/theflexfitness' %>
+      <%= link_to image_tag('/Twitter.png'), 'http://www.Twitter.com/theflexfitness' %>
     </div>
   </div>
 
@@ -115,11 +122,29 @@ html,body
   #nav_header{
     background-color: white;
     height: 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    border-bottom: solid grey;
   }
 
   #u-logo-position {
     position: relative;
     left: 10%;
     top: 20px;
+  }
+
+  #u-social-position {
+    position: relative;
+    left: 90%;
+    top: -150px;
+  }
+
+  #u-logo-2-position {
+    position: relative;
+    left: 45%;
+    top: -32px;
   }
 </style>
