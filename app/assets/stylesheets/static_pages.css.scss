@@ -1,8 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
 body { padding-bottom: 100px; }
+
+@media (max-width: 500px) {
+  h1 {
+    font-size: 100%;
+  }
+}
+
 
 * {
    line-height: 1;
-   font-family: 'Baskerville';
+   font-family: 'Montserrat';
 }
 
 ul {

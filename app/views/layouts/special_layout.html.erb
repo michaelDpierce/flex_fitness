@@ -12,13 +12,13 @@
     <div id='u-logo-position'>
       <%= image_tag '/logo.png', alt:'Flex Fitness Logo #1'%>
     </div>
-    <div id='u-logo-2-position'>
+    <div id='u-logo-2-position' class='hidden-xs'>
       <%= image_tag '/ff_logo.png', width:'125', height:'125', alt:'Flex Fitness Logo #2'%>
     </div>
-    <div id='u-social-position'>
-      <%= link_to image_tag('/Facebook.png'), 'https://www.facebook.com/theflexfitness' %>
-      <%= link_to image_tag('/Twitter.png'), 'http://www.Twitter.com/theflexfitness' %>
-      <%= link_to image_tag('/Instagram.png'), 'http://instagram.com/the_flexfitness' %>
+    <div id='u-social-position' class='hidden-xs'>
+      <%= link_to image_tag('/Facebook.png'), 'https://www.facebook.com/theflexfitness', target: '_blank' %>
+      <%= link_to image_tag('/Twitter.png'), 'http://www.Twitter.com/theflexfitness', target: '_blank' %>
+      <%= link_to image_tag('/Instagram.png'), 'http://instagram.com/the_flexfitness', target: '_blank' %>
     </div>
   </div>
 
@@ -140,7 +140,7 @@ html,body
 
   #u-social-position {
     position: relative;
-    left: 90%;
+    left: 85%;
     top: -150px;
   }
 
