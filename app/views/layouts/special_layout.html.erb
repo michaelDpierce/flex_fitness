@@ -1,152 +1,25 @@
 <!DOCTYPE html>
 <html id='u-html-width'>
-<head>
-  <title>FlexFitness</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-</head>
-<body>
-
-  <div id='nav_header'>
-    <div id='u-logo-position'>
-      <%= image_tag '/logo.png', alt:'Flex Fitness Logo #1'%>
-    </div>
-    <div id='u-logo-2-position' class='hidden-xs'>
-      <%= image_tag '/ff_logo.png', width:'125', height:'125', alt:'Flex Fitness Logo #2'%>
-    </div>
-    <div id='u-social-position' class='hidden-xs'>
-      <%= link_to image_tag('/Facebook.png'), 'https://www.facebook.com/theflexfitness', target: '_blank' %>
-      <%= link_to image_tag('/Twitter.png'), 'http://www.Twitter.com/theflexfitness', target: '_blank' %>
-      <%= link_to image_tag('/Instagram.png'), 'http://instagram.com/the_flexfitness', target: '_blank' %>
-    </div>
-  </div>
-
-
-  <!-- <nav class='navbar navbar-default' id='u-navbar-height' role='navigation'>
-    <div class='container-fluid'>
-      <div class='navbar-header'>
-        <button type='button' class='navbar-toggle collapsed' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1'>
-          <span class='sr-only'>Toggle navigation</span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-          <span class='icon-bar'></span>
-        </button>
-        <a class='navbar-brand' href='/'>
-          <div class='visible-xs'>
-            <%= image_tag '/logo.png', height: '30px;' %>
-          </div>
-        </a>
-        <a class='navbar-brand' href='/'>
-          <div class='hidden-xs'>
-            <%= image_tag '/logo.png'%>
-          </div>
-        </a>
+  <head>
+    <title>FlexFitness</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  </head>
+  <body>
+    <div id='nav_header'>
+      <div id='u-logo-position'>
+        <%= image_tag '/logo.png', alt:'Flex Fitness Logo #1'%>
       </div>
-      <div id='u-navbar-button-offset' class='hidden-xs'>
-
-        <a href='/how_it_works'>
-          <button type='button' class='btn btn-default navbar-btn'>
-            How it Works
-          </button>
-        </a>
-        <a href='/pricing_and_membership'>
-          <button type='button' class='btn btn-default navbar-btn'>
-            Pricing and Membership
-          </button>
-        </a>
-        <a href='/studio_information'>
-          <button type='button' class='btn btn-default navbar-btn'>
-            Studio Information
-          </button>
-        </a>
-        <a href='/sign_up'>
-          <button type='button' class='btn btn-default navbar-btn'>
-            Sign Up
-          </button>
-        </a>
+      <div id='u-logo-2-position' class='hidden-xs'>
+        <%= image_tag '/ff_logo.png', width:'125', height:'125', alt:'Flex Fitness Logo #2'%>
       </div>
-
-      <div id='u-navbar-social-networking-offset' class='hidden-xs pull-right'>
-        <%= link_to image_tag('/Facebook.png'), 'https://www.facebook.com/theflexfitness' %>
-        <%= link_to image_tag('/Twitter.png'), 'http://www.Twitter.com/theflexfitness' %>
-        <!-- <%= link_to image_tag('/Instagram.png'), 'http://www.Instagram.com/' %>
-        <%= link_to image_tag('/Pinterest.png'), 'http://www.Pinterest.com/' %> -->
-        <!-- <br>
-        <a href='/contact_us'>Contact Us</a>
-      </div> -->
-
-      <!-- <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
-        <ul class='nav navbar-nav visible-xs'>
-          <li><a href='#'>How it Works</a></li>
-          <li><a href='#'>Pricing and Membership</a></li>
-          <li><a href='#'>Studio Information</a></li>
-          <li><a href='#'>Sign Up</a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    <!-- </div><!-- /.container-fluid -->
-  <!-- </nav> -->
-
-  <!-- <div class='container'> -->
+      <div id='u-social-position' class='hidden-xs'>
+        <%= link_to image_tag('/Facebook.png'), 'https://www.facebook.com/theflexfitness', target: '_blank' %>
+        <%= link_to image_tag('/Twitter.png'), 'http://www.Twitter.com/theflexfitness', target: '_blank' %>
+        <%= link_to image_tag('/Instagram.png'), 'http://instagram.com/the_flexfitness', target: '_blank' %>
+      </div>
+    </div>
     <%= yield %>
-  <!-- </div> -->
-</body>
-
-
-<!--
-<div class='navbar navbar-fixed-bottom transbox'>
-  <br>
-  <center>
-    <p id='copyright'>
-      &copy; 2014 Flex Fitness LTD
-    </p>
-    <p id='michael'>
-      Designed by Affektive Software LLC
-    </p>
-  </center>
-  <br>
-</div> -->
+  </body>
 </html>
-
-
-
-<style>
-
-html,body
-{
-    width: 100%;
-    height: 100%;
-    margin: 0px;
-    padding: 0px;
-    overflow-x: hidden;
-}
-
-  #nav_header{
-    background-color: white;
-    height: 100px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 999;
-    width: 100%;
-    border-bottom: solid grey;
-  }
-
-  #u-logo-position {
-    position: relative;
-    left: 10%;
-    top: 20px;
-  }
-
-  #u-social-position {
-    position: relative;
-    left: 85%;
-    top: -150px;
-  }
-
-  #u-logo-2-position {
-    position: relative;
-    left: 45%;
-    top: -32px;
-  }
-</style>
